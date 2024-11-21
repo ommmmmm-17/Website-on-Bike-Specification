@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family:  'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;;
+}
+
+header {
+     background: linear-gradient(135deg, #041a6a, #0d4b8e);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #d8bb14;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.bike {
+    background: #ffffff00;
+    border: 2px solid #d8bb14;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    width: 850px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    transition: transform 0.3
+    
+    
+    
+    
+    
+    
+    
+}
+
+.bike img {
+    max-width: 100%;
+    height: 80%;
+    align-items: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+   
+}
+
+.bike:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+   transform: rotate(5deg);
+   
+}
+
+button {
+  width: 100%;
+            padding: 10px;
+            background-color: #d8bb14;
+            color: #041a6a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #041a6a;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d8bb14; 
+    border-radius: 5px;
+}
+
+
+.social-icons {
+    margin-top: 10px; 
+}
+
+.social-icons a {
+    margin-right: 10px; 
+}
+
+.social-icons img {
+    width: 24px;
+    height: auto; 
+    transition: transform 0.3s ease; 
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); 
+}
+
+
+@media (max-width: 600px) {
+    .bike {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    .bike img {
+        width: 100%; 
+    }
+}
+
+
+.custom-button {
+    background-color: #d8bb14; 
+    color: #041a6a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-button:hover {
+    background-color: #c5a112; 
+    transform: translateY(-2px); 
+}
+#customization {
+    background-color: #fff;
+    border: 2px solid #d8bb14;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#customization h2 {
+    text-align: center;
+}
+
+#customization form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#customization label {
+    margin: 10px 0 5px;
+}
+
+#customization select, 
+#customization input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+.custom-button {
+    background-color: #d8bb14; 
+    color: #041a6a; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-button:hover {
+    background-color: #c5a112; 
+    transform: translateY(-2px); 
+}
+.email-section {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.email-section h2 {
+    margin-bottom: 20px;
+}
+
+.email-section input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+ </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Bike Showroom</h1>
+        <nav>
+            <ul>
+                <li><a href="#bikes">Bikes</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="bikes">
+            <h2>Our Bikes</h2>
+            <div class="bike">
+                <a href="gtspecs.html">
+                <img src="bikes/continental-gt-.webp" alt="Continental GT 650">
+                <h3>Continental GT 650</h3>
+                <p>Perfect for off-road adventures and cruishing.</p>
+                <p>Price: ₹4.5 Lakhs</p>
+                </a>
+            </div>
+            <div class="bike">
+                <a href="yamahaspecs.html">
+                <img src="bikes/yamaha r3.jpg" alt="Road Bike">
+                <h3>Yamaha R3</h3>
+                <p>Fast and lightweight for speed enthusiasts.</p>
+                <p>Price:  ₹3.5 Lakhs</p>
+                </a>
+
+            </div>
+            <div class="bike">
+                <a href="350specs.html">
+                <img src="bikes/classic 350.jpg" alt="Hybrid Bike">
+                <h3>Royal Enfield Classic 350</h3>
+                <p>Great for both city rides and trails.</p>
+                <p>Price: ₹2.2 Lakhs</p>
+                </a>
+            </div>
+
+            <div class="bike">
+                <a href="1000rrspecs.html">
+                <img src="bikes/m 1000 rr.jpg" alt="Hybrid Bike">
+                <h3>BMW M 1000 RR</h3>
+                <p>Great for Racing.</p>
+                <p>Price: ₹55-61 Lakhs</p>
+                </a>
+                
+            </div>
+             <div class="bike">
+                <a href="hayabusaspecs.html">
+                <img src="bikes/hayabusa.jpg" alt="Hybrid Bike">
+                <h3>Suzuki Hayabusa</h3>
+                <p>Compete with speed of light.</p>
+                <p>Price: ₹13.75 Lakhs</p>
+                </a>
+                
+            </div>
+            <div class="bike">
+                <a href="rocket3specs.html">
+                <img src="bikes/rocket 3.jpg" alt="Hybrid Bike">
+                <h3>Triumph Rocket 3</h3>
+                <p>Bike with a Beast Engine.</p>
+                <p>Price: ₹24.5-25.75 Lakhs</p>
+                </a>
+                
+            </div>
+
+              <div class="bike">
+                <a href="fatbobspecs.html">
+                <img src="bikes/fat bob 114.jpg" alt="Hybrid Bike">
+                <h3>Harley Davidson Fat Bob 114</h3>
+                <p>Great for Cruishing.</p>
+                <p>Price: ₹22 Lakhs</p>
+                </a>
+                
+            </div>
+
+            <div class="bike">
+                <a href="H2Rspecs.html">
+                <img src="bikes/H2R.jpg" alt="Hybrid Bike">
+                <h3>Kawasaki Ninja ZX-10R</h3>
+                <p>Great for racing.</p>
+                <p>Price: ₹16 Lakhs</p>
+                </a>
+            </div>
+
+                <div class="bike">
+                    <a href="tigerspecs.html">
+                <img src="bikes/tiger 1200.jpg" alt="Hybrid Bike">
+                <h3>Triumph Tiger 1200</h3>
+                <p>Great for offroading.</p>
+                <p>Price: ₹19.45 Lakhs</p>
+                    </a>
+                
+            </div>
+
+            <div class="bike">
+                <a href="1250GSspecs.html">
+                <img src="bikes/1250 gs.jpg" alt="Hybrid Bike">
+                <h3>BMW R1250 GS</h3>
+                <p>Great for off-road & comfort.</p>
+                <p>Price: ₹20.55 Lakhs</p>
+                </a>
+            </div>
+
+            <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+    <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+    <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+</div>
+
+<button class="custom-button">Learn More</button>
+
+
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are passionate about bikes and committed to providing the best selection for our customers. Our showroom features a variety of bikes for all types of riders.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@bikeshowroom.com</p>
+            <p>Phone: (+91) 8252676312</p>
+        </section>
+
+        <section id="location">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1818.8295211464124!2d75.70130254010253!3d31.24985356051609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f007402a701%3A0x3b09cd415ff39bf7!2sBH-2%20LPU!5e0!3m2!1sen!2sin!4v1730467779630!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<section id="customization">
+    <h2>Customize Your Bike</h2>
+    <form>
+        <label for="bike-model">Select Bike Model:</label>
+        <select id="bike-model">
+            <option value="continental-gt">Continental GT 650</option>
+            <option value="yamaha-r3">Yamaha R3</option>
+            <option value="classic-350">Royal Enfield Classic 350</option>
+            <option value="bmw-m1000-rr">BMW M 1000 RR</option>
+            <option value="suzuki-hayabusa">Suzuki Hayabusa</option>
+            <option value="triumph-rocket3">Triumph Rocket 3</option>
+            <option value="1250gs">BMW  R1250 GS</option>
+            <option value="fatbob">Harley Davidson Fat Bob 114</option>
+            <option value="kawasaki-ninja-zx-10r">Kawasaki Ninja ZX-10R</option>
+            <option value="tigers">Triumph Tiger 1200</option>
+
+
+        </select>
+
+        <label for="color">Choose Color:</label>
+        <select id="color">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+
+        <fieldset>
+    <legend>Select Accessories:</legend>
+    <div>
+        <input type="checkbox" id="saddlebags" name="accessories" value="saddlebags">
+        <label for="saddlebags">Saddlebags</label>
+    </div>
+    <div>
+        <input type="checkbox" id="windshield" name="accessories" value="windshield">
+        <label for="windshield">Windshield</label>
+    </div>
+    <div>
+        <input type="checkbox" id="gps" name="accessories" value="gps">
+        <label for="gps">GPS Navigation</label>
+    </div>
+</fieldset>
+<br>
+<br>
+ <div class="email-section">
+        <h2>Your Email ID</h2>
+        <form id="email-form">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+        </form>
+    </div>
+
+    <a href="redirect.html">    
+    <button type="submit" class="custom-button">Submit Customization</button>
+    </a>
+    </form>
+</section>
+
+   
+
+        
+</main>
+
+    <footer>
+        <p>&copy; 2024 Bike Showroom. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
